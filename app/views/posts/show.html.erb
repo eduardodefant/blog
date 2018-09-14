@@ -1,0 +1,17 @@
+
+<h3> Blog </h3>
+<p id="notice"><%= notice %></p>
+
+<div>
+<p>
+  <h5><%= @post.titulo %></h5>
+</p>
+<div>
+
+<p>
+  <%= @post.descricao %>
+</p>
+
+<a class="waves-effect waves-light btn" <%= link_to 'Voltar', posts_path %> </a>
+<a class="waves-effect waves-light btn" <%= link_to 'Editar', edit_post_path(@post) %> </a>
+
